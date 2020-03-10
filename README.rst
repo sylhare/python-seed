@@ -12,7 +12,14 @@ loaded with:
 -  Style with `pylint <https://pylint.readthedocs.io/en/latest/>`__
 
 As well a ``.gitignore``, ``.pylintrc`` config file, and simple
-directory structure employing the ``src`` pattern.
+directory structure.
+
+Get Started
+-----------
+
+You can fork the project and start your own with it.
+
+The source files represents a hello world and can be removed / modified.
 
 Setup
 -----
