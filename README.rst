@@ -46,7 +46,7 @@ Use the ``dev-requirements.txt`` for libraries only used for tests or dev.
    tox
    # Run the linter:
    tox -e lint
-   # Runt the coverage on the src module
+   # Run the coverage on the src module
    pytest -e coverage
 
 
