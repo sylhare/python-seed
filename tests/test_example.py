@@ -12,7 +12,7 @@ class ParserTest(unittest.TestCase):
         self.assertEqual("Hello World!", hello())
 
     def test_root_path(self):
-        self.assertTrue("python-seed-app" in root_path())
+        self.assertTrue("python-seed" in root_path())
 
     def tearDown(self):
         print("Tear Down - After each Test\n")
