@@ -7,7 +7,3 @@ def hello():
 
 def root_path():
     return ROOT_PATH
-
-
-if __name__ == "__main__":
-    print(hello())

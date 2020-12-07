@@ -1,9 +1,9 @@
 import unittest
 
-from src.app import hello, root_path
+from src.example import hello, root_path
 
 
-class ParserTest(unittest.TestCase):
+class ExampleTest(unittest.TestCase):
 
     def setUp(self):
         print("\nSet up - Before each test")
