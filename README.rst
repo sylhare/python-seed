@@ -38,7 +38,7 @@ Testing
 
 To find out more info about the testing configuration, check out the
 ``tox.ini`` file.
-Use the ``dev-requirements.txt`` for libraries only used for tests or dev.
+Use the ``requirements-dev.txt`` for libraries only used for tests or dev.
 
 .. code:: bash
 
