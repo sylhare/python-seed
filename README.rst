@@ -3,8 +3,8 @@ Python Seed App
 
 Inspired by `MarshalJoe <https://github.com/MarshalJoe>`__
 
-This is a simple skeleton for a generic Python (3.6) app. It comes
-loaded with:
+This is a simple skeleton for a generic Python app.
+It comes loaded with:
 
 -  Project automation with
    `tox <https://tox.readthedocs.io/en/latest/>`__
@@ -18,6 +18,7 @@ Get Started
 -----------
 
 You can fork the project and start your own with it.
+You need to install tox `pip install tox` then run `tox` to install the dependencies.
 
 The source files represents a hello world and can be removed / modified.
 
