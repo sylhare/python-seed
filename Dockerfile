@@ -1,11 +1,14 @@
-FROM python:3.6-alpine
-
-COPY requirements.txt ./
-
-RUN pip install -r requirements.txt
-
-Add /src /app
+FROM python:3.7-alpine
 
 WORKDIR /app
 
-CMD ["python", "app.py"]
+RUN addgroup -S docker && adduser -S user -G docker
+COPY --chown=user:docker src ./src
+COPY --chown=user:docker requirements.txt ./
+USER user
+
+RUN pip install -r requirements.txt
+
+RUN ls -la
+
+CMD ["python", "-m", "src.app"]
