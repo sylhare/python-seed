@@ -17,7 +17,7 @@ setup(
     author_email='',
     classifiers=[
         'Development Status :: 3 - Alpha',
-        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.12',
     ],
     packages=find_packages(),
     install_requires=requirements,
