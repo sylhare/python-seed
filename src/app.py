@@ -1,4 +1,9 @@
-from src.example import hello
+"""Entry point for the app. Start writing your application here."""
 
-if __name__ == '__main__':
-    print(hello())
+
+def main() -> None:
+    print("Hello from python-seed!")
+
+
+if __name__ == "__main__":
+    main()

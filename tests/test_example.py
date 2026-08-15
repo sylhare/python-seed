@@ -1,22 +1,17 @@
-import unittest
+from pathlib import Path
 
 from src.example import hello, root_path
 
 
-class ExampleTest(unittest.TestCase):
-
-    def setUp(self):
-        print("\nSet up - Before each test")
-
-    def test_hello_world(self):
-        self.assertEqual("Hello World!", hello())
-
-    def test_root_path(self):
-        self.assertTrue("python-seed" in root_path())
-
-    def tearDown(self):
-        print("Tear Down - After each Test\n")
+def test_hello_returns_greeting():
+    assert hello() == "Hello World!"
 
 
-if __name__ == "__main__":
-    unittest.main()
+def test_root_path_returns_path():
+    assert isinstance(root_path(), Path)
+
+
+def test_root_path_points_to_repo_root():
+    root = root_path()
+    assert root.is_dir()
+    assert (root / "pyproject.toml").is_file()
